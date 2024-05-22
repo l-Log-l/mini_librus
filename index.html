@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MINI Librus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <script src="./script.js"></script>
+  <script src="./setting.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <div class="container">
+        <h1 class="main">Plan lekcji</h1>
+        <div class="day-selector">
+            <label for="day-select"></label>
+            <select id="day-select">
+                <option value="0">Poniedziałek</option>
+                <option value="1">Wtorek</option>
+                <option value="2">Środa</option>
+                <option value="3">Czwartek</option>
+                <option value="4">Piątek</option>
+            </select>
+        </div>
+        <ul id="schedule" class="schedule"></ul>
+    </div>
+    <div class="button-container bottom-right">
+        <a href="https://portal.librus.pl/rodzina/synergia/loguj" class="floating-button">Login to Librus</a>
+    </div>
+
+    <div class="button-container top-left">
+        <button class="floating-button" onclick="openSettings()">💀💀💀</button>
+    </div>
+
+    <!-- Modal Window -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSettings()">&times;</span>
+            <h2>Настройки</h2>
+            <button class="setting-button" onclick="toggleTheme()">Выбрать тему</button>
+            <button class="setting-button" onclick="logout()">Выйти с аккаунта</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
